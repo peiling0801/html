@@ -1,0 +1,265 @@
+<html>
+    <head><title>台灣簡介</title>
+    <meta charset="utf-8">
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    <style>
+        *{
+            margin:0;
+            color:black;
+            text-align:center;
+        }
+        .top{
+             background-color: white;
+        }
+        .top .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:10px;
+        }
+        .top .logo{
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .top .logo img{
+            width: 100px;
+            vertical-align: middle;
+        }
+        .top .top-nav{
+            font-size: 25px;
+            font-weight: bold;       
+        }
+        .top .top-nav a{
+            text-decoration: none;
+        }
+        .nav {
+            background-color:#333;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul {
+            list-style-type: none;  
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #333; 
+        }
+        .nav li {
+            float: left; 
+        }
+        .nav li a {    
+            display: block;  
+            color: white;  
+            text-align: center;  
+            padding: 14px 16px;  
+            text-decoration: none;  
+        }
+        .nav li a:hover {
+            background-color: #113; 
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;   
+        }
+        li.dropdown:hover{
+            background-color: #500;  
+        }
+        .dropdown-content { 
+            display: none;
+            position: absolute;
+            background-color: #500;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .slider{
+            background-color: black;
+        }
+        .banner{
+            background-image: linear-gradient(#0396FF,#a9c6ff);
+            padding:30px;
+        }
+        .banner h1{
+            padding: 20px;
+        }        
+        .faculty {
+            display: block;
+            justify-content: center;
+            background-color:white;
+            padding:40px;
+        }
+        .faculty h2 {
+            font-size: 25px;
+            color: rgb(50,51,52);
+            padding-bottom:40px;
+        }
+        .faculty .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .faculty .photo{
+            /*border:1px solid blue;*/
+            display:block;
+            text-decoration: none;
+        }
+        .faculty .photo img{
+            height: 350px;
+            width: 350px;
+        }
+        .faculty .photo h3{
+            color: White;
+            background-color: rgba(39,40,34,.500);
+            text-align: center;           
+        }
+  
+        .contact {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 30px;                
+        }
+        .contact .container{
+            display: block;
+        }
+        .contact .container h2{
+            color: rgb(54, 82, 110);
+            font-size: 25px;
+        }
+        .contact .container .infos{
+            display:flex;
+            margin-top: 30px; 
+        }
+        .contact .container .infos .left{
+            display:block;
+            text-align: left;
+            margin-right: 30px;
+        }
+        .contact .container .infos .left b{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            text-decoration: bold;
+            color: black;
+            font-size: 18px;
+            line-height: 18px;
+        }
+        .contact .container .infos .left span{
+            display:block;
+            text-align: left;
+            margin-top: 10px;
+            color: rgba(39,40,34,0.5);
+            font-size: 16px;
+            padding-left: 27px;
+        }
+        .contact .container .infos .right{
+            height: 200px;               
+        }
+        .contact .container .infos .right iframe{
+            width: 100%;
+            height: 100%;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(25,26,30);
+            padding: 30px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/800px-Flag_of_the_Republic_of_China.svg.png">
+                  台灣的介紹
+                </div>
+                <div class="top-nav">
+                  <a href=>我的國家:台灣</a>
+                </div>
+              </div>
+        </div>
+        <div class="nav">   
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#introduction">國家簡介</a></li>
+                <li  class="dropdown"><a href="#faculty">直轄市介紹</a>
+                    <div class="dropdown-content">
+                        <a href="#faculty">臺北市</a>
+                        <a href="#faculty">新北市</a>
+                        <a href="#faculty">桃園市</a>
+                        <a href="#faculty">台中市</a>
+                        <a href="#faculty">台南市</a>
+                        <a href="#faculty">高雄市</a>
+                    </div>                       
+                </li>
+                <li><a href="#about">相關資訊</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="flexslider" style="direction:rtl">
+                <ul class="slides">
+                    <li><img src="https://image-cdn.learnin.tw/bnextmedia/image/album/2019-12/img-1577779026-38598.jpg?w=900&output=webp" /><h1>台北101</h1></li>
+                    <li><img src="https://wkitty.tw/wp-content/uploads/2018/03/1525244899-13350278a559d3006403c2d14e74d842.jpg" /><h1>85大樓</h1></li>
+                    <li><img src="https://img.ltn.com.tw/Upload/art/page/800/2022/05/29/15.jpg" /><h1>圓山大飯店</h1></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner" id="introduction">
+            <h1>台灣簡介</h1>
+            <h1>西方國家亦稱福爾摩沙</h1>
+            <h1>亞洲東部／西太平洋</h1>
+            <h1>臺灣東部多山，西部平原平緩傾斜</h1>
+        </div>
+        <div class="faculty" id="faculty">
+            <h2>台灣介紹</h2>
+            <div class="container">
+                <a class="photo" href="">
+                    <img src="https://enews.ccu.edu.tw/var/file/89/1089/img/869564328.jpg" />
+                    <h3>縣市旗</h3>
+                </a>
+              <a class="photo" href="">
+                    <img src="https://s.eslite.com/upload/product/o/2681353617008/590715.jpg" />
+                    <h3>台灣地圖</h3>
+                </a>
+                <a class="photo" href="">
+                    <img src="https://mysys.greenscope.com.tw/pubimg/ckfinder/HT00179/images/2(12).jpg" />
+                    <h3>主要山脈</h3>
+                </a>        
+            </div>
+        </div>
+        <div class="contact" id="about">
+            <div class="container">
+                <h2>相關資訊</h2>
+                <div class="infos">
+                    <div class="left">
+                        <h1>全島被北回歸線貫穿，氣候炎熱，夏季偏</h1>
+                        <h1>長，介於熱帶與亞熱帶地帶之間，北回歸</h1>
+                        <h1>線以北為副熱帶季風氣候、以南為.熱帶</h1>
+                        <h1>季風氣候，自然景觀與生態系資源豐富多元。</h1>
+                    </div>
+                    <div class="right">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+     </body>
+</html>
